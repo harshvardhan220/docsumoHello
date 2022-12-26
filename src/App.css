@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.wrapper {
+  background-image: url("./assets/BgImg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo__container {
+  height: 30px;
+  width: 177px;
+  position: absolute;
+  top: 70px;
+  left: 140px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  height: auto;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login__container {
+  width: 548px;
+  border-radius: 8px;
+  padding: 54px 64px 48px;
+  background-color: #fff;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 25%);
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.login__text {
+  color: #181818;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+.error__text {
+  color: red;
+  margin-top: 22px;
+}
+.email,
+.password {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding: 11px 14px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #a3adce;
+  font: normal 500 16px/1 Lato, sans-serif;
+}
+button {
+  width: 100%;
+  height: 48px;
+  background: #344bfc;
+  border: 1px solid #344bfc;
+  color: #fff;
+  padding: 14px 15px;
+  border-radius: 4px;
+  justify-content: center;
+  font: normal normal 16px/1.25 Lato, sans-serif;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+.email__wrapper {
+  height: 80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.password__wrapper {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.forgot_password {
+  text-align: right;
+}
+.loginButton__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 90px;
+}
+.loginButton__wrapper > h4 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+.loginButton__wrapper > h4 > span {
+  color: #344bfc;
+  font-weight: 600;
+}
+.home__wrapper {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  width: 100vw;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  font-size: 30px;
 }
